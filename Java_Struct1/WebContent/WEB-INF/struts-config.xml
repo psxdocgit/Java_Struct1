@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE struts-config 
+	PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"  "http://struts.apache.org/dtds/struts-config_1_3.dtd">    
+    <struts-config>
+    
+    	<!-- FORM SET-->
+    	<form-beans>
+         <form-bean name="indexForm" type="com.my.pro.page.index.IndexForm" />
+   		 <form-bean name="loginForm" type="com.my.pro.page.login.LoginForm" />
+   		 <form-bean name="managerForm" type="com.my.pro.page.manager.ManagerForm" />
+   		 <form-bean name="managercreateForm" type="com.my.pro.page.manager.ManagerCreateForm" />
+   		 <form-bean name="managerbusinessForm" type="com.my.pro.page.manager.ManagerBusinessForm" />
+   		 <form-bean name="registerForm" type="com.my.pro.page.register.RegisterForm" />
+    	</form-beans>
+
+    	<global-forwards></global-forwards>
+    
+        <!-- action set -->
+    	<action-mappings>
+    	    <!-- index Action -->
+    		<action input="index" 
+    				name="indexForm" 
+    				path="/index" 
+    				scope="request" 
+    				type="com.my.pro.page.index.IndexAction" 
+    				validate="true">
+    			<forward name="index" path="/html/index.jsp" />
+     		</action>
+     		    	
+    	    <!-- Login Action -->
+    		<action input="login" 
+    				name="loginForm" 
+    				path="/login" 
+    				scope="request" 
+    				type="com.my.pro.page.login.LoginAction" 
+    				validate="true">
+    			<forward name="login" path="/html/login.jsp" />
+     		</action>
+     		
+    	    <!-- Manager Action -->
+    		<action input="manager" 
+    				name="managerForm" 
+    				path="/manager" 
+    				scope="request" 
+    				type="com.my.pro.page.manager.ManagerAction" 
+    				validate="true">
+    			<forward name="manager" path="/html/manager.jsp" />
+     		</action>  
+     		   
+    	    <!-- managercreate Action -->
+    		<action input="managercreate" 
+    				name="managercreateForm" 
+    				path="/managercreate" 
+    				scope="request" 
+    				type="com.my.pro.page.manager.ManagerCreateAction" 
+    				validate="true">
+    			<forward name="managercreate" path="/html/managercreate.jsp" />
+     		</action>   
+     		   
+    	    <!-- managerbusiness Action -->
+    		<action input="managerbusiness" 
+    				name="managerbusinessForm" 
+    				path="/managerbusiness" 
+    				scope="request" 
+    				type="com.my.pro.page.manager.ManagerBusinessAction" 
+    				validate="true">
+    			<forward name="managerbusiness" path="/html/managerbusiness.jsp" />
+     		</action>  
+     		     				
+     		<!-- Register Action -->
+    		<action input="register" 
+    				name="registerForm" 
+    				path="/register" 
+    				scope="request" 
+    				type="com.my.pro.page.register.RegisterAction" 
+    				validate="true">
+    			<forward name="register" path="/html/register.jsp" />
+     		</action>
+     		
+    	</action-mappings>
+    	
+    	<!-- upload file max -->
+		<controller maxFileSize="2M" />
+		
+		<!-- message resources -->
+		<message-resources parameter="com.my.pro.resources.ApplicationResources" />
+		
+    </struts-config>

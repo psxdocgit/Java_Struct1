@@ -1,0 +1,27 @@
+/**
+ * register.css
+ */
+
+#register{
+	margin:10px auto;
+}
+
+#_talbe{
+	margin:10px auto;
+	border::2px solid #ccc;
+}
+.left{
+	text-align:left;
+}
+.leftlable{
+	width:30%;
+	border-width:0px;
+	padding:0px;
+	margin:0px;
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+
+
+

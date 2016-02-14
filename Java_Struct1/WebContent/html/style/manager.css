@@ -1,0 +1,104 @@
+/**
+ * manager.css
+ */
+
+#slt_div{
+	height:80px;
+	line-height:85px;
+	border:5px solid #CCC;
+}
+
+#content_div{
+	width:817px;
+	overflow:auto;
+	height:500px;
+}
+
+table{
+	width:800px;
+	border:3px solid #CCC;
+}
+
+ td.left-slt{
+    border:3px solid #CCC;
+ 	width:150px;
+ 	text-align:left;
+ }
+ td.right-slt{
+ 	border:3px solid #CCC;
+ 	width:800px;
+ }
+ 
+ .lineBorder{
+ 	border:3px solid #CCC;
+ 	width:10%;
+ }
+
+th{
+	background:#ccc;
+	border: solid 1px #B4B4B4;
+	border-collapse: collapse;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.content1{
+	border: solid 1px #B4B4B4;
+	border-collapse: collapse;
+	width:10px;
+	vertical-align:middle;
+	text-align:center;
+	word-break:break-all;
+}
+.content2{
+	width:80px;
+	border: solid 1px #B4B4B4;  
+	border-collapse: collapse;
+	vertical-align:middle;
+	text-align:left; 
+	word-break:break-all;
+}
+.content3{
+	width:100px;
+	border: solid 1px #B4B4B4;  
+	border-collapse: collapse;   
+	word-break:break-all;
+}
+.content4{
+	width:350px;
+	border: solid 1px #B4B4B4;  
+	border-collapse: collapse;
+	vertical-align:text-top;   
+	word-break:break-all;
+	text-align:left; 
+}
+.content5{
+	width:100px;
+	text-align:left; 
+	border: solid 1px #B4B4B4;  
+	border-collapse: collapse;   
+	word-break:break-all;
+}
+.content6{
+	width:60px;
+	border: solid 1px #B4B4B4;  
+	border-collapse: collapse;   
+	word-break:break-all;
+}
+.content7{
+	width:70px;
+	border: solid 1px #B4B4B4;  
+	border-collapse: collapse;   
+	word-break:break-all;
+}
+
+a { 
+    display: block; 
+    color: #000; 
+    text-decoration: none; 
+} 
+
+a:hover { 
+    color: #000; 
+} 
+ 
